@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+  <head>
+  	<meta charset="utf-8">
+  	<title>Video player example</title>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="player">
+      <video controls>
+        <source src="video/sintel-short.mp4" type="video/mp4">
+        <!-- fallback content here -->
+      </video>
+      <div class="controls">
+        <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+        <button class="stop" data-icon="S" aria-label="stop"></button>
+        <div class="timer"><div></div><span aria-label="timer">00:00</span></div>
+        <button onclick="getVolume()" type="button">🔈</button>
+        <button onclick="setHalfVolume()" type="button">🔉</button>
+        <button onclick="setFullVolume()" type="button">🔊</button><br>
+        <button class="rwd" data-icon="B" aria-label="rewind"></button>
+        <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+      </div>
+    </div>
+    <script src="custom-player.js"></script>
+  </body>
+</html>
